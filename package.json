@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "NODE_ENV=production npm run build",
-    "deploy": "NODE_ENV=production  gh-pages -d out"
+    "deploy": "NODE_ENV=production gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "motion": "^12.23.0",

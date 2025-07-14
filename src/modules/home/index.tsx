@@ -5,12 +5,16 @@ import { BsDropletFill } from "react-icons/bs";
 import { GiCrystalGrowth } from "react-icons/gi";
 import { TbVaccineBottle } from "react-icons/tb";
 import ProductCard from "./ProductCard";
+import { getImagePath } from "@/utils";
 
 const LandingPage = () => {
   return (
     <div className="bg-green-50 text-green-900 min-h-screen font-sans">
       {/* Hero Section */}
-      <section className="text-white py-80 px-4 text-center bg-green-200 bg-[url('/images/cover.jpg')] bg-no-repeat bg-cover bg-blend-multiply">
+      <section
+        style={{ backgroundImage: `url(${getImagePath("images/cover.jpg")})` }}
+        className={`text-white py-80 px-4 text-center bg-green-200 bg-no-repeat bg-cover bg-blend-multiply`}
+      >
         <h1 className="text-4xl md:text-5xl font-bold">
           Sustainable Sodium Silicate for a Cleaner Future
         </h1>
@@ -44,7 +48,7 @@ const LandingPage = () => {
         <div className="mt-6 flex justify-center items-center gap-4">
           <div className="w-24 h-24">
             <Image
-              src="/images/sodium-silicate-drum.png"
+              src={getImagePath("images/sodium-silicate-drum.png")}
               alt="Sodium Silicate"
               width={100}
               height={100}
@@ -57,7 +61,7 @@ const LandingPage = () => {
             <span className="text-2xl rotate-180">→</span>
             <div className="w-24 h-24">
               <Image
-                src="/images/sodium-silicate-gel.png"
+                src={getImagePath("images/sodium-silicate-gel.png")}
                 alt="Sodium Silicate"
                 width={100}
                 height={100}
@@ -70,7 +74,7 @@ const LandingPage = () => {
           <span className="text-2xl -rotate-90">→</span>
           <div className="w-24 h-24">
             <Image
-              src="/images/sodium-silicate-crystal.png"
+              src={getImagePath("images/sodium-silicate-crystal.png")}
               alt="Sodium Silicate"
               width={100}
               height={100}

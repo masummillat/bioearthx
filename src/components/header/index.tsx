@@ -1,3 +1,4 @@
+import { getImagePath } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +9,7 @@ const Header = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/bioearthx-logo.png"
+            src={getImagePath("images/bioearthx-logo.png")}
             alt="BioEarthX Logo"
             width={120}
             height={40}
